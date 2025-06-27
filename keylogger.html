@@ -10,17 +10,8 @@
     <input type="text" id="testInput" placeholder="Type here...">
   <textarea id="logOutput" rows="5" cols="50" readonly></textarea>
 
-   <script>
-  const log = [];
+  <script src="logger.js"></script>
 
-  document.addEventListener('keydown', function(event) {
-    log.push(event.key);
-    console.log("Key pressed:", event.key);
-
-    // Aggiorna la textarea
-    document.getElementById('logOutput').value = log.join('');
-  });
-</script>
 
 
 
