@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Keylogger Test</title>
+</head>
+<body>
+    <h1>Keylogger Demo</h1>
+    <p>Type something in the field below:</p>
+    <input type="text" id="testInput" placeholder="Type here...">
+  <textarea id="logOutput" rows="5" cols="50" readonly></textarea>
+
+   <script>
+  const log = [];
+
+  document.addEventListener('keydown', function(event) {
+    log.push(event.key);
+    console.log("Key pressed:", event.key);
+
+    // Aggiorna la textarea
+    document.getElementById('logOutput').value = log.join('');
+  });
+</script>
+
+
+
+
+</body>
+</html>
+Create keylogger HTML demo
