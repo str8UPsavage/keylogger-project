@@ -4,11 +4,6 @@
 
 1. Open the project in a browser via GitHub Pages:
 https://str8UPpsavage.github.io/keylogger-project/
-
-csharp
-Copia
-Modifica
-
 2. Start typing anywhere on the page.
 3. Every 10 characters, a simulated "send" is logged to the browser console:
 - Method: `fetch()`
