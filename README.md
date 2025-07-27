@@ -19,4 +19,3 @@ Files:
 - README.md: what you're reading now
 
 Made for educational and lab use only. No real data is collected or sent. Do not use this outside of isolated environments.
-IT'S PRACTICALLY USELESS.
