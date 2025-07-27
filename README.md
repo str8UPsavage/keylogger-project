@@ -1,39 +1,22 @@
-# keylogger-project
+# Keylogger Project
 
-A simple browser-based keylogger designed for educational and demonstration purposes only.
+This is not a real keylogger. It’s a browser demo built to understand how keylogging works in JavaScript. No backend, no sensitive data, no hidden tricks. Just a transparent look at how basic keystroke capture operates.
 
-> ⚠️ This project is intended strictly for **ethical and academic** use. Do not use it on systems or networks without explicit permission.
+The script listens for `keydown` events, stores the inputs in an array, and once the array hits a threshold, it sends the content using `fetch()` to a fake endpoint. That’s it.
 
-## 🔍 Overview
+Why?  
+Because understanding these mechanisms is essential for anyone working in Blue Team, detection engineering, or even secure frontend development. Knowing how the attack looks helps build proper defenses.
 
-This project simulates basic keylogging behavior using JavaScript in a browser environment. It captures keystrokes and simulates sending the data to a remote server endpoint for analysis or storage.
+What it taught me:  
+- Event-driven JS behavior in browsers  
+- How input can be silently harvested and exfiltrated  
+- Why client-side security can’t be trusted  
+- How to simulate malicious behavior safely in a lab
 
-The application is fully client-side and does not store or transmit any real data unless configured explicitly.
+Files:
+- `index.html`: basic input page  
+- `logger.js`: collects and "sends" the data  
+- `README.md`: what you're reading now
 
-## 🛠️ Technologies Used
+Made for educational and lab use only. No real data is collected or sent. Do not use this outside of isolated environments.
 
-- HTML5
-- JavaScript (Vanilla)
-- GitHub Pages (for hosting)
-
-## 📁 Files
-
-- `index.html` – Main page capturing input events.
-- `logger.js` – External script that collects and simulates transmission of keystrokes.
-- `README.md` – Project description.
-
-## 🚀 How It Works
-
-1. JavaScript listens to keyboard input events (`keydown`).
-2. Keystrokes are collected in an array.
-3. Once a threshold is reached, the logger simulates sending the data to a fictional endpoint using `fetch()`.
-
-This mimics common techniques used in real-world keyloggers without causing harm or unauthorized access.
-
-## 📄 Disclaimer
-
-This project is for **educational use only**. Using keyloggers without consent is illegal and unethical. Always conduct cybersecurity experiments in isolated, controlled, and authorized environments.
-
-## 📬 Contact
-
-For questions or feedback, feel free to open an issue.
